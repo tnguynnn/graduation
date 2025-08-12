@@ -227,6 +227,8 @@
         const idx = parts.indexOf("invitation");
         if (idx !== -1 && parts[idx + 1]) {
             nameFromUrl = parts[idx + 1];
+        } else {
+            nameFromUrl = "";
         }
     }
 
