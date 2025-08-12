@@ -217,7 +217,7 @@
                                     color: "from-indigo-500 to-blue-500"
                                 }, {
                                     icon: (0, i.jsx)(m.A, {className: "h-6 w-6"}),
-                                    title: "Giờ",
+                                    title: "Thời gian",
                                     content: "08:30 - khi chúng ta gặp nhau",
                                     color: "from-purple-500 to-indigo-500"
                                 }, {
