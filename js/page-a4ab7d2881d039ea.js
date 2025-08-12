@@ -176,6 +176,7 @@
                                 })]
                             }), (0, i.jsxs)(o.P.div, {
                                 initial: {y: 30, opacity: 0},
+
                                 animate: {y: 0, opacity: 1},
                                 transition: {duration: .8, delay: .6},
                                 className: "text-center space-y-6",
@@ -222,6 +223,7 @@
                                     content: "08:30 - khi chúng ta gặp nhau",
                                     color: "from-purple-500 to-indigo-500"
                                 }, {
+
                                     icon: (0, i.jsx)(x.A, {className: "h-6 w-6"}),
                                     title: "Địa điểm",
                                     content: "Học viện Tài Chính, 58 Lê Văn Hiến",
@@ -238,6 +240,7 @@
                                         children: [(0, i.jsx)("div", {
                                             className: "p-3 rounded-full bg-gradient-to-br ".concat(e.color, " mb-4"),
                                             children: e.icon
+
                                         }), (0, i.jsx)("h3", {
                                             className: "font-semibold text-xl mb-2",
                                             children: e.title
