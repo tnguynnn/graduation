@@ -328,7 +328,7 @@
                         }), (0, i.jsxs)("div", {
                             className: "grid grid-cols-1 md:grid-cols-2 gap-4 p-4 max-h-[calc(90vh-4rem)] overflow-auto",
                             children: [(0, i.jsx)("div", {
-                                className: "aspect-square md:aspect-auto rounded-lg overflow-hidden h-full",
+                                className: "rounded-lg overflow-hidden h-[300px] md:h-full",
                                 children: (0, i.jsx)("iframe", {
                                     src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.933689521569!2d105.7727683!3d21.0753105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134553056cb074f%3A0xa8186964db39707f!2zNTggUC4gTMOqIFbEg24gSGnhur9uLCDEkMO0bmcgTmfhuqFjLCBC4bqvYyBU4burIExpw6ptLCBIw6AgTuG7mWkgMTAwMDA!5e0!3m2!1svi!2s!4v1754981628661!5m2!1svi!2s",
                                     width: "100%",
@@ -340,7 +340,7 @@
                                     className: "rounded-lg"
                                 })
                             }), (0, i.jsx)("div", {
-                                className: "aspect-square md:aspect-auto rounded-lg overflow-hidden flex items-center justify-center h-[calc(80vh-4rem)] max-w-full",
+                                className: "rounded-lg overflow-hidden flex items-center justify-center h-[calc(80vh-4rem)] max-w-full",
                                 children: (0, i.jsxs)("div", {
                                     className: "relative w-full h-full",
                                     children: [(0, i.jsx)(u.default, {
