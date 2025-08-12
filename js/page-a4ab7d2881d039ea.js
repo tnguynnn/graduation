@@ -218,6 +218,7 @@
                                 }, {
                                     icon: (0, i.jsx)(m.A, {className: "h-6 w-6"}),
                                     title: "Thời gian",
+
                                     content: "08:30 - khi chúng ta gặp nhau",
                                     color: "from-purple-500 to-indigo-500"
                                 }, {
