@@ -180,7 +180,7 @@
                                 className: "text-center space-y-6",
                                 children: [(0, i.jsx)("p", {
                                     className: "text-lg text-indigo-200",
-                                    children: "Ngô Tuấn Nguyên kính mời:"
+                                    children: "Kính mời:"
                                 }), (0, i.jsx)("div", {
                                     className: "overflow-hidden py-2",
                                     children: (0, i.jsx)("div", {
@@ -201,7 +201,7 @@
                                     className: "max-w-xl mx-auto",
                                     children: (0, i.jsx)("p", {
                                         className: "text-indigo-200 italic text-lg md:text-xl",
-                                        children: '"Hôm nay, chặng đường của em khép lại bằng nụ cười chiến thắng. Mời mọi người cùng em đón khoảnh khắc vinh quang!"'
+                                        children: 'Hôm nay, chặng đường của em khép lại bằng nụ cười chiến thắng. Mời mọi người cùng em đón khoảnh khắc vinh quang!'
                                     })
                                 })]
                             }), (0, i.jsx)(o.P.div, {
