@@ -224,13 +224,7 @@
     let nameFromUrl = url.searchParams.get("name");
 
     if (!nameFromUrl) {
-        const parts = window.location.pathname.split("/").filter(Boolean);
-        const idx = parts.indexOf("invitation");
-        if (idx !== -1 && parts[idx + 1]) {
-            nameFromUrl = parts[idx + 1];
-        } else {
-            nameFromUrl = "";
-        }
+        nameFromUrl = ""
     }
 
     function replace() {
@@ -239,12 +233,18 @@
 
         // chỉ thêm span nếu container đang trống
         if (ele.children.length === 0) {
-            for (let i = 0; i < nameFromUrl.length; i++) {
-                const span = document.createElement("span");
-                span.className =
-                    "text-3xl md:text-4xl font-bold inline-block mx-[2px] bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 text-transparent bg-clip-text";
-                span.textContent = nameFromUrl[i];
-                ele.appendChild(span);
+            if(nameFromUrl === ""){
+                document.querySelector('.text-lg.text-indigo-200').style.display = 'none'
+                document.querySelector('.overflow-hidden.py-2').style.display = 'none'
+            }
+            else{
+                for (let i = 0; i < nameFromUrl.length; i++) {
+                    const span = document.createElement("span");
+                    span.className =
+                        "text-3xl md:text-4xl font-bold inline-block mx-[2px] bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 text-transparent bg-clip-text";
+                    span.textContent = nameFromUrl[i];
+                    ele.appendChild(span);
+                }
             }
         }
     }
