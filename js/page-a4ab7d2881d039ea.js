@@ -136,7 +136,7 @@
                         children: (0, i.jsxs)("div", {
                             className: "flex items-center space-x-3 bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20",
                             children: [(0, i.jsx)(u.default, {
-                                src: "/images/logo.png",
+                                src: "./images/logo.png",
                                 alt: "logo",
                                 width: 28,
                                 height: 28,
