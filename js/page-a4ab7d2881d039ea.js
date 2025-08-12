@@ -342,8 +342,8 @@
                                 children: (0, i.jsxs)("div", {
                                     className: "relative w-full h-full",
                                     children: [(0, i.jsx)(u.default, {
-                                        src: "../images/map_g3.jpg",
-                                        alt: "Hội trường G3",
+                                        src: "./images/map_g3.jpg",
+                                        alt: "58 Lê Văn Hiến",
                                         fill: !0,
                                         className: "object-cover rounded-lg"
                                     }), (0, i.jsx)("div", {
