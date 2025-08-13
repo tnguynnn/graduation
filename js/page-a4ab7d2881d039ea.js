@@ -175,37 +175,46 @@
                                     children: [(0, i.jsx)("div", {className: "h-px w-16 bg-gradient-to-r from-transparent to-purple-400"}), (0, i.jsx)(c.A, {className: "h-5 w-5 mx-3 text-purple-300"}), (0, i.jsx)("div", {className: "h-px w-16 bg-gradient-to-l from-transparent to-purple-400"})]
                                 })]
                             }), (0, i.jsxs)(o.P.div, {
-                                initial: {y: 30, opacity: 0},
-
-                                animate: {y: 0, opacity: 1},
-                                transition: {duration: .8, delay: .6},
+                                initial: { y: 30, opacity: 0 },
+                                animate: { y: 0, opacity: 1 },
+                                transition: { duration: 0.8, delay: 0.6 },
                                 className: "text-center space-y-6",
-                                children: [(0, i.jsx)("p", {
-                                    className: "text-lg text-indigo-200",
-                                    children: "Kính mời:"
-                                }), (0, i.jsx)("div", {
-                                    className: "overflow-hidden py-2",
-                                    children: (0, i.jsx)("div", {
-                                        className: "flex justify-center flex-wrap",
-                                        children: t.split("").map((e, t) => (0, i.jsx)(o.P.span, {
-                                            custom: t,
-                                            variants: M,
-                                            initial: "hidden",
-                                            animate: "visible",
-                                            className: "text-3xl md:text-4xl font-bold inline-block mx-[2px] bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 text-transparent bg-clip-text",
-                                            children: " " === e ? "\xa0" : e
-                                        }, t))
+                                children: [
+                                    (0, i.jsx)("p", {
+                                        className: "text-lg text-indigo-200",
+                                        children: "Thân mời:"
+                                    }),
+                                    (0, i.jsx)("div", {
+                                        className: "overflow-hidden py-2",
+                                        children: (0, i.jsx)("div", {
+                                            className: "flex justify-center flex-wrap px-4", // 👈 Thêm padding ngang
+                                            children: t.split("").map((e, t) => (0, i.jsx)(o.P.span, {
+                                                custom: t,
+                                                variants: M,
+                                                initial: "hidden",
+                                                animate: "visible",
+                                                className: "text-3xl md:text-4xl font-bold inline-block mx-[3px] tracking-wider bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 text-transparent bg-clip-text", // 👈 Tăng khoảng cách và tracking
+                                                children: " " === e ? "\xa0" : e
+                                            }, t))
+                                        })
+                                    }),
+                                    (0, i.jsx)(o.P.div, {
+                                        initial: { opacity: 0, y: 20 },
+                                        animate: { opacity: 1, y: 0 },
+                                        transition: { duration: 0.8, delay: 1.15 },
+                                        className: "max-w-xl mx-auto space-y-2",
+                                        children: [
+                                            (0, i.jsx)("p", {
+                                                className: "text-indigo-200 italic text-lg md:text-xl text-center iamtdf123123",
+                                                children: "Hôm nay, chặng đường của em khép lại bằng nụ cười chiến thắng."
+                                            }),
+                                            (0, i.jsx)("p", {
+                                                className: "text-indigo-200 italic text-lg md:text-xl text-center",
+                                                children: "Mời mọi người cùng em đón khoảnh khắc vinh quang!"
+                                            })
+                                        ]
                                     })
-                                }), (0, i.jsx)(o.P.div, {
-                                    initial: {opacity: 0, y: 20},
-                                    animate: {opacity: 1, y: 0},
-                                    transition: {duration: .8, delay: 1.15},
-                                    className: "max-w-xl mx-auto",
-                                    children: (0, i.jsx)("p", {
-                                        className: "text-indigo-200 italic text-lg md:text-xl",
-                                        children: 'Hôm nay, chặng đường của em khép lại bằng nụ cười chiến thắng. Mời mọi người cùng em đón khoảnh khắc vinh quang!'
-                                    })
-                                })]
+                                ]
                             }), (0, i.jsx)(o.P.div, {
                                 initial: {y: 30, opacity: 0},
                                 animate: {y: 0, opacity: 1},
@@ -283,7 +292,7 @@
                                     children: ["Mọi người li\xean hệ em qua số điện thoại:", (0, i.jsxs)("a", {
                                         href: "tel:0971619051",
                                         className: "text-indigo-400 hover:text-indigo-500 hover:underline font-medium",
-                                        children: [" ", "097.161.9051"]
+                                        children: [" ", "0971.619.051"]
                                     })]
                                 }), (0, i.jsxs)("div", {
                                     className: "flex items-center justify-center",

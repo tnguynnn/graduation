@@ -233,9 +233,8 @@
 
     function replace() {
         const ele = document.querySelector(".flex.justify-center.flex-wrap");
-        if (!ele) return; // không có container thì bỏ qua
+        if (!ele) return;
 
-        // chỉ thêm span nếu container đang trống
         if (ele.children.length === 0) {
             if(nameFromUrl === ""){
                 document.querySelector('.text-lg.text-indigo-200').style.display = 'none'
@@ -252,19 +251,40 @@
             }
         }
     }
-
-    window.addEventListener("DOMContentLoaded", () => {
-        replace();
-
-        const observer = new MutationObserver((mutations, obs) => {
-            replace();
-            if (document.querySelector(".flex.justify-center.flex-wrap")?.children.length > 0) {
-                obs.disconnect(); // ngắt theo dõi khi đã thêm span xong
+    document.addEventListener("DOMContentLoaded", () => {
+        function initWhiteSpace(el) {
+            function updateWhiteSpace() {
+                el.style.whiteSpace = window.innerWidth >= 768 ? "nowrap" : "normal";
+            }
+            window.addEventListener("resize", updateWhiteSpace);
+            updateWhiteSpace(); // gọi ngay lần đầu
+        }
+        let el = document.querySelector(".iamtdf123123");
+        if (el) {
+            initWhiteSpace(el);
+            return;
+        }
+        const observer = new MutationObserver(() => {
+            el = document.querySelector(".iamtdf123123");
+            if (el) {
+                observer.disconnect();
+                initWhiteSpace(el);
             }
         });
 
         observer.observe(document.body, { childList: true, subtree: true });
     });
+    window.addEventListener("DOMContentLoaded", () => {
+        replace();
+        const observer = new MutationObserver((mutations, obs) => {
+            replace();
+            if (document.querySelector(".flex.justify-center.flex-wrap")?.children.length > 0) {
+                obs.disconnect();
+            }
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    });
+
 </script>
 
 
